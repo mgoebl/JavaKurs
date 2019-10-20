@@ -10,32 +10,32 @@ public class RollTheDieGame {
         int maxRolls = 6;
         Random random = new Random();
 
-        System.out.println("Welcome to Roll the Die! Let's begin...");
+        System.out.println("Willkommen zu Wirf den Würfel! Fang an...");
 
         for (int i = 1; i <= maxRolls; i++) {
 
             int die = random.nextInt(6) + 1;
             currentSpace = currentSpace + die;
 
-            System.out.print(String.format("Roll #%d: You've rolled a %d. ", i, die));
+            System.out.print(String.format("Wurf #%d: Du hast eine %d. gewürfelt. ", i, die));
 
             if(currentSpace == lastSpace){
-                System.out.print("You're on space " + currentSpace + ". Congrats, you win!");
+                System.out.print("Du bist genau bei " + currentSpace + ". Gewonnen!");
                 break;
             }
             else if(currentSpace > lastSpace){
-                System.out.print("Unfortunately, that takes you past " + lastSpace + " spaces. You lose!");
+                System.out.print("Unglücklicherweise bingt dich dieser Wurf über die Grenze von " + lastSpace + ". Du hast verloren!");
                 break;
             }
             else if(i == maxRolls){
-                System.out.println("You're on space " + currentSpace + ".");
-                System.out.println("Unfortunately, you didn't make it to all " +
-                        lastSpace + " spaces. You lose!");
+                System.out.println("Du hast " + currentSpace + " erreicht.");
+                System.out.println("Unglücklicherweise bleibst Du unter dem Bereich von" +
+                        lastSpace + " Schritten. Du hast verloren!");
             }
             else{
                 int spacesToGo = lastSpace - currentSpace;
-                System.out.print("You are now on space " + currentSpace +
-                        " and have " + spacesToGo + " more to go.");
+                System.out.print("Du hast nun " + currentSpace +
+                        " Schritte gemacht und brauchst " + spacesToGo + " mehr.");
             }
 
             System.out.println();
