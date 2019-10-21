@@ -18,8 +18,8 @@ public class Greetings {
         greetUser(name, nachName);
     }
 
-    private static void greetUser(String name, String nachName){
+    private static void greetUser(String n, String nn){
 
-        System.out.println("Hallo, " + name + ", " + nachName);
+        System.out.println("Hallo, " + n + ", " + nn);
     }
 }
