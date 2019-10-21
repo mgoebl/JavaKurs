@@ -8,12 +8,14 @@ import java.util.Scanner;
 
 public class SofortKreditCheck {
 
+    //definiert globale Variablen
     private static int benoetigtesEinkommen = 25000;
     private static int benoetigterKreditScore = 700;
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
 
+        //definiert lokale Variablen
         double einkommen = holeEinkommen();
         int kreditScore = holeKreditScore();
         scanner.close();
@@ -31,8 +33,8 @@ private static int holeKreditScore() {
         return scanner.nextInt();
     }
 
-private static boolean istBenutzerQualifiziert(int kreditScore, double einkommen) {
-    return kreditScore >= benoetigterKreditScore && einkommen >= benoetigtesEinkommen;
+private static boolean istBenutzerQualifiziert(int k, double e) {
+    return k >= benoetigterKreditScore && e >= benoetigtesEinkommen;
     }
 
 private static void informiereBenutzer(boolean istQualifiziert) {
