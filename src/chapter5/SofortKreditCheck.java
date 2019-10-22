@@ -22,6 +22,7 @@ public class SofortKreditCheck {
         // Prüfe ob der Benutzer für einen Kredit qualifiziert ist
         boolean istBenutzerQualifiziert = istBenutzerQualifiziert(kreditScore, einkommen);
         informiereBenutzer(istBenutzerQualifiziert);
+        // ein  neuer Kommentar von Mickey
     }
 private static double holeEinkommen() {
         System.out.println("Gebe dein Einkommen ein:");
