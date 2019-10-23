@@ -6,14 +6,14 @@ public class WohnFlaechenRechner {
         /*
          Rechteck 1
         */
-        Rectangle raum1 = new Rectangle( 100, 20);
-        raum1.setzeLaenge(50);
-        raum1.setzeBreite(20);
+        Rechteck raum1 = new Rechteck( 100, 20);
+        //raum1.setzeLaenge(50);
+        //raum1.setzeBreite(20);
         double raum1Flaeche = raum1.berechneFlaeche();
         /*
         Rechteck 2
         */
-        Rectangle raum2 = new Rectangle(150, 120);
+        Rechteck raum2 = new Rechteck(150, 120);
         double raum2Flaeche = raum2.berechneFlaeche();
         double  raum1undraum2 = raum1Flaeche + raum2Flaeche;
 

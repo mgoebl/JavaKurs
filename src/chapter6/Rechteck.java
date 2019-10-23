@@ -1,16 +1,16 @@
 package chapter6;
 
-public class Rectangle {
+public class Rechteck {
 
     private double laenge;
     private double breite;
-
-    public Rectangle(){
+/* benötigt es diesen Construktor oder funktioniert das Ganze auch mit javas eingebauten default-Contruktor
+    public Rechteck(){
         laenge = 0;
         breite = 0;
     }
-
-    Rectangle(double laenge, double breite){
+*/
+    Rechteck(double laenge, double breite){
    //     this.laenge = laenge; //Wert wird entweder mit this. gesetzt
         setzeLaenge(laenge);
         setzeBreite(breite); // oder mit der Setter-Methode - beides ist möglich und ok!
