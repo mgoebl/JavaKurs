@@ -6,7 +6,7 @@ public class WohnFlaechenRechner {
         /*
          Rechteck 1
         */
-        Rectangle raum1 = new Rectangle();
+        Rectangle raum1 = new Rectangle( 100, 20);
         raum1.setzeLaenge(50);
         raum1.setzeBreite(20);
         double raum1Flaeche = raum1.berechneFlaeche();

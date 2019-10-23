@@ -10,13 +10,13 @@ public class Rectangle {
         breite = 0;
     }
 
-    public Rectangle(double laenge, double breite){
+    Rectangle(double laenge, double breite){
    //     this.laenge = laenge; //Wert wird entweder mit this. gesetzt
         setzeLaenge(laenge);
         setzeBreite(breite); // oder mit der Setter-Methode - beides ist möglich und ok!
     }
 
-    public void setzeLaenge(double laenge){
+    void setzeLaenge(double laenge){
         this.laenge = laenge;
     }
 
@@ -24,7 +24,7 @@ public class Rectangle {
         return laenge;
     }
 
-    public void setzeBreite(double breite){
+    void setzeBreite(double breite){
         this.breite = breite;
     }
 
