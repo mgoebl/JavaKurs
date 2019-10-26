@@ -18,7 +18,7 @@ public class TelefonRechnung {
         this.id = id;
         grundKosten = 15;
         freiMinuten = 100;
-        verbrauchteMinuten = 340;
+        verbrauchteMinuten = 25;
     }
 
     public TelefonRechnung(int id, double grundKosten, int freiMinuten, int verbrauchteMinuten){
@@ -64,7 +64,7 @@ public class TelefonRechnung {
         if(verbrauchteMinuten <= freiMinuten){
             return 0;
         }
-        double mehrVerbrauchsRate = 0.25;
+        double mehrVerbrauchsRate = 0.09;
         double mehrVerbrauchsMinuten = verbrauchteMinuten - freiMinuten;
         return mehrVerbrauchsMinuten * mehrVerbrauchsRate;
     }
