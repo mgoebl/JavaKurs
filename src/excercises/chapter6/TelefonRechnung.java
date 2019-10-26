@@ -14,7 +14,7 @@ public class TelefonRechnung {
         verbrauchteMinuten = 340;
     }
 
-    public TelefonRechnung(int id){
+    TelefonRechnung(int id){
         this.id = id;
         grundKosten = 15;
         freiMinuten = 100;
@@ -56,7 +56,7 @@ public class TelefonRechnung {
         return verbrauchteMinuten;
     }
 
-    public void setVerbrauchteMinuten(int minuten){
+    void setVerbrauchteMinuten(int minuten){
         this.verbrauchteMinuten = minuten;
     }
 
@@ -78,7 +78,7 @@ public class TelefonRechnung {
         return grundKosten + berechneUeberschuss() + berechneSteuer();
     }
 
-    public void druckeEinzelpostenRechnung(){
+    void druckeEinzelpostenRechnung(){
         System.out.println("ID:" + id);
         System.out.println("Grundkosten: €" + grundKosten);
         System.out.println("Ueberschuss Gebühr: €" + String.format("%.2f", berechneUeberschuss()));
